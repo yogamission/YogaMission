@@ -347,8 +347,8 @@ a.donate {
 }
 
 a.donate:hover {
-    position: relative;
-    box-shadow: 3px 3px 5px #555;
+   /* position: relative;
+    box-shadow: 3px 3px 5px #555; */
 }
 
 .text1 {
@@ -1016,4 +1016,50 @@ header h1 {
     margin-top: 40px;
 }
 
+}
+
+
+/* User */
+
+table.schedule{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+td.heading{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-weight: bold;
+    /*padding: 10px;*/
+}
+td.content1{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    /*padding: 10px; */
+}
+
+
+td.color_red  {
+    Background-color: #d93156; text-align: center; color: white;
+}
+
+td.color_yellow  {
+    Background-color: #d9d958; text-align: center; color: black;
+}
+
+td.color_purple  {
+    Background-color: #8773c6; text-align: center; color: white;
+}
+
+td.color_light_green  {
+    Background-color: #71da71; text-align: center; color: white;
+}
+
+td.color_light_green  {
+    Background-color: #71da71; text-align: center; color: black;
+}
+
+td.color_green  {
+    Background-color: #2e822e; text-align: center; color: white;
 }
