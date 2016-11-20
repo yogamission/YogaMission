@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <link rel="stylesheet" href="css/form.css">
+  
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.1.1.js"></script>
     <script src="js/script.js"></script>
@@ -23,6 +24,13 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/kwiks.js"></script>
+    <script type="text/javascript" src="vendor/jqueryFlickrAlbum.min.js"></script>
+    <script src="vendor/flicker.gallery/js/jquery-ui.min.js"></script>
+    <script src="vendor/flicker.gallery/js/FlickrAPI.js"></script>
+  <script src="vendor/flicker.gallery/js/Flickr.Gallery.min.js"></script>
+  <link rel="stylesheet" href="vendor/flicker.gallery/gallery.css">
+
+    
     <script>
       $(document).ready(function(){
         $().UItoTop({ easingType: 'easeOutQuart' });
@@ -94,7 +102,7 @@
           <div class="grid_4">
             <h1>
               <a href="index.html">
-                <img src="images/logo.jpg" alt="Yoga Mission">
+                <img src="images/logo2.jpg" alt="Yoga Mission">
               </a>
             </h1>
           </div>
@@ -102,12 +110,11 @@
           <div class="grid_4" style="border-radius: 0px; border: 0px solid black;padding-top:10px;background-color: #dfdfdf;  padding-bottom:5px;text-align: center; height: 191px;">
             
             <div class="text2" style="position: relative;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%); color:black;">  
-              <p>We Yoga mission traditions... </p>
-              <p>Disciples of Yoga science... </p>
+              <p>We Yoga mission...</p>
+              <p>Disciples of Yoga science...</p>
+              <p>Search for unknown... </p>
               <p>Not a Swamijies... </p>
-              <p>Research for unknown... </p>
-            
-                        </div>
+            </div>
             
           </div>
           
@@ -138,25 +145,18 @@
           <div class="menu_block" align="center">
             <nav class="horizontal-nav full-width horizontalNav-notprocessed">
               <ul class="sf-menu">
-                <li class="{% if page.menu == 'home' %} current {% endif %}"><a href="index.html">Home</a>
-                  <!-- <ul>
-                    <li><a href="#">history</a></li>
-                    <li><a href="#">offers</a></li>
-                    <li><a href="#">news</a>
-                    
-                    <ul>
-                      <li><a href="#">fresh </a></li>
-                      <li><a href="#">archive</a></li>
-                    </ul>
-                  </ul> -->
-                </li><li class="{% if page.menu == 'ecoyoga' %} current {% endif %}"><a href="ecoyoga.html">Eco Yoga </a></li><li class="{% if page.menu == 'ecoandhra' %} current {% endif %}"><a href="ecoandhra.html">Eco Andhra</a></li><li class="{% if page.menu == 'ecomission' %} current {% endif %}"><a href="ecomission.html">Eco Mission</a></li><li class="{% if page.menu == 'pigeonmission' %} current {% endif %}">
-                <a href="pigeonmission.html">Pigeon Mission</a></li><li class="{% if page.menu == 'ecomeditation' %} current {% endif %}">
-                <a href="ecomeditation.html">Eco Meditation</a></li><li class="{% if page.menu == 'kurungadu' %} current {% endif %}">
-                <a href="kurungadu.html">Kurungadu</a></li><li class="{% if page.menu == 'ecoschool' %} current 
-                {% endif %}">
-                <a href="ecoschool.html">Eco School</a></li><li class="{% if page.menu == 'contactus' %} current 
-                {% endif %}">
-                <a href="contactus.html">Contact Us</a></li>
+                <li class="{% if page.menu == 'home' %} current {% endif %}"><a href="index.html">Home</a></li>
+                <li class="{% if page.menu == 'yogamission' %} current {% endif %}"><a href="yogamission.html">Yoga Mission</a></li>
+                <li class="{% if page.menu == 'ecomission' %} current {% endif %}"><a href="ecomission.html">Eco Mission</a></li>
+                <li class="{% if page.menu == 'kurungadu' %} current {% endif %}"><a href="kurungadu.html">Kurungadu</a></li>
+                <li class="{% if page.menu == 'pigeonmission' %} current {% endif %}"><a href="pigeonmission.html">Pigeon Mission</a></li>
+                <li class="{% if page.menu == 'ecoyoga' %} current {% endif %}"><a href="ecoyoga.html">Eco Yoga </a></li>
+                <li class="{% if page.menu == 'ecoschool' %} current {% endif %}"><a href="ecoschool.html">Eco School</a></li>
+                <li class="{% if page.menu == 'ecolifestyle' %} current {% endif %}"><a href="ecolifestyle.html">Eco Lifestyle</a></li>
+                <li class="{% if page.menu == 'oneloftindia' %} current {% endif %}"><a href="oneloftindia.html">One Loft India</a></li>
+                <!-- <li class="{% if page.menu == 'ecoandhra' %} current {% endif %}"><a href="ecoandhra.html">Eco Andhra</a></li> -->
+                <!-- <li class="{% if page.menu == 'ecomeditation' %} current {% endif %}"><a href="ecomeditation.html">Eco Meditation</a></li> -->
+                <li class="{% if page.menu == 'contactus' %} current {% endif %}"><a href="contactus.html">Contact Us</a></li>
               </ul>
             </nav>
             <div class="clear"></div>
@@ -174,8 +174,8 @@
         <div class="container_12">
           <div class="grid_12 ">
             <div class="socials">
-              <a href="#"></a>
-              <a href="#"></a>
+              <a href="#fb"></a>
+              <a href="#tw"></a>
               
               <div class="clear"></div>
             </div>
