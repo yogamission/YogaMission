@@ -9,37 +9,30 @@ title: Yoga Mission | Introduction
     <div class="video_block">
       <div class="text2" ><img align="left" src="images/2013.png">Introuction to Yoga Mission </div>
       know about Yoga Mission here - MORE INFORMATION COMING SOON
-  	<!-- gallery STRUCTURE -->
-
-  <div class="niceGallery" id="gallery">
-
-        <!-- HERE IS PLACE FOR PHOTOS -->
-
-  </div>
-
-  <!-- end gallery STRUCTURE -->
-
-      <script charset="utf-8">
-      	 $(document).ready(function (){ 
-  $("#gallery").flickrGallery({
-//FLICKR API KEY
-Key: '28f19a6a4ab6707219f8fe058ae32031',
-//Secret
-Secret: '85da6bcda632052a',
-//FLICKR user ID
-User: '146612014@N06',
-//Flickr PhotoSet ID
-PhotoSet: '72157672833614763',
-/*-- VIEWBOX SETTINGS --*/ 
-Speed   : 400,    //Speed of animations
-navigation  : 1,    //(true) <a href="http://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a> (arrows)
-keyboard  : 1,    //(true) Keyboard navigation 
-numberEl  : 1     //(true) Number elements
-  });
-}); 
-
-      </script>
     </div>
   </div>
+
+    	<div id="nanoGallery1"></div>
+      <script charset="utf-8">
+      	 $(document).ready(function () {
+		      $("#nanoGallery1").nanoGallery({
+		          kind: 'flickr',
+		          userID: '146612014@N06',
+		          photoset: '72157672833614763',
+		          thumbnailWidth: 'auto',
+      			  thumbnailHeight: 250,
+      			  colorScheme: 'none',
+			      thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+			      //theme: 'light',
+			      // thumbnailGutterWidth : 0,
+			      // thumbnailGutterHeight : 0,
+			      i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+			      thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
+		      });
+		  });
+      </script>
+
+
+  
 </div>
 
