@@ -6,9 +6,42 @@ menu: home
 
 <div class="main">
 <!--==============================Content=================================-->
-      <div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - December 16, 2013!</div>
+      <div class="content">
         <div class="container_12">
           <div class="grid_8">
+            <div id="nanoGallery1"></div>
+            <script charset="utf-8">
+               $(document).ready(function () {
+                $("#nanoGallery1").nanoGallery({
+                    kind: 'flickr',
+                    userID: '146612014@N06',
+                    photoset: '72157686852841186',
+                    photoSorting: 'random',
+                    paginationMaxLinesPerPage: 2,
+                    thumbnailWidth: '290 XS135 SM190 LA290 XL290',
+                    thumbnailHeight: '190 XS88 SM125 LA190 XL190',
+                    colorScheme: 'none',
+                  thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+                  //theme: 'light',
+                  // thumbnailGutterWidth : 0,
+                  // thumbnailGutterHeight : 0,
+                  i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+                  thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
+                });
+            });
+            </script>
+          </div>
+
+          <div class="grid_4">
+            <a href="#" class="donate">Our Mission</a>
+            <div class="text1">We can change life</div>
+            <p>Etiam dui eros, laoreet sit amet est vel,modo venenatis eros. Fusce adipiscing quam id riss sagittis, non consequat lacus interdum. Proin  tincidunt nulla, eu sodales arcu.</p>
+            Quisquerra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan justo vitae feugiat placerat. Praesent vel ultrices velit. Suspendisse risus justo, lacinia vitae eleifend
+          </div>
+          <div class="clear"></div>
+
+          <!-- <div class="grid_8">
+
             <div class="flexslider">
               <ul class="slides">
                 <li>
@@ -33,14 +66,9 @@ menu: home
             </div>
             <span id="responsiveFlag"></span>
           </div>
-          <div class="grid_4">
-            <a href="#" class="donate">Our Mission</a>
-            <div class="text1">We can change life</div>
-            <p>Etiam dui eros, laoreet sit amet est vel,modo venenatis eros. Fusce adipiscing quam id riss sagittis, non consequat lacus interdum. Proin  tincidunt nulla, eu sodales arcu.</p>
-            Quisquerra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan justo vitae feugiat placerat. Praesent vel ultrices velit. Suspendisse risus justo, lacinia vitae eleifend
-          </div>
-          <div class="clear"></div>
-          <div class="grid_3">
+          <div class="clear"></div> -->
+
+          <!-- <div class="grid_3">
             <div class="block2 maxheight">
               <div class="title">Yoga Mission</div>
               <div class="pad">
@@ -99,7 +127,7 @@ menu: home
               </div>
             </div>
           </div>
-          <div class="clear"></div>
+          <div class="clear"></div> -->
 <!--           <div class="grid_3">
             <div class="block2 maxheight">
               <div class="title">Eco Andhra</div>
@@ -154,7 +182,7 @@ menu: home
               </div>
             </div>
           </div> -->
-          <div class="grid_4">
+          <!-- <div class="grid_4">
             <h3 class="nowrap mb0">Successful stories</h3>
             <time class="st1" datetime="2013-01-01">29.11.2013</time>
             Lorem ipsum dolor sit amet, consectetur iscing elit. Inllis eratattis neque facilisis, sit ameticies erat rutrum. Cras facilisis, nulla velrral auctor leo magna sodales felis, quis malesuada nib odio ut velitylok. Proin pharetra luctus.
@@ -169,6 +197,6 @@ menu: home
             </div>
             <div class="clear"></div>
             <div class="alright"><a href="#" class="btn">Read More</a></div>
-          </div>
+          </div> -->
         </div>
       </div>

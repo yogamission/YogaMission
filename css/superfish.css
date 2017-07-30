@@ -1,7 +1,7 @@
 
 .menu_block  {
 	z-index: 999;
-	float: right;
+	/*float: right;*/
 	padding-top: 1px;
 	position: relative;
 
@@ -56,23 +56,23 @@ nav{ position:relative;padding: 0px 0 0 0;}
 
 
 .sf-menu>li+li>a {
-	background-color: #ffe202;
-}
-
-.sf-menu>li+li+li>a {
-	background-color: #0052da;
-}
-
-.sf-menu>li+li+li+li>a {
 	background-color: #ff7f00;
 }
 
-.sf-menu>li+li+li+li+li>a {
+.sf-menu>li+li+li>a {
 	background-color: #04bacf;
 }
 
+.sf-menu>li+li+li+li>a {
+	background-color: #92ce0a;
+}
+
+.sf-menu>li+li+li+li+li>a {
+	background-color: #ff7f00;
+}
+
 .sf-menu>li+li+li+li+li+li>a {
-	background-color: #7504cf;
+	background-color: #04bacf;
 }
 
 .sf-menu>li+li+li+li+li+li+li>a {
@@ -80,11 +80,15 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 .sf-menu>li+li+li+li+li+li+li+li>a {
+	background-color: #92ce0a;
+	background-color: #7504cf;
+	background-color: #ffe202;
+	background-color: #b4cf04;
+	background-color: #0052da;
 	background-color: #04cf90;
 }
 
 .sf-menu>li+li+li+li+li+li+li+li+li>a {
-	background-color: #b4cf04;
 }
 
 .sf-menu>li+li+li+li+li+li+li+li+li+li>a {
@@ -98,6 +102,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 .sf-menu>li+li+li+li+li+li+li+li+li+li+li+li>a {
 	background-color: #cf0479;
 }
+
 
 
 .sf-menu>li>a+a {
