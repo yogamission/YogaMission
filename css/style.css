@@ -1063,3 +1063,33 @@ td.color_light_green  {
 td.color_green  {
     Background-color: #2e822e; text-align: center; color: white;
 }
+
+/* ********** YOGA MISSION CUSTOM STYLES ************/
+.feedback {
+    margin-top: 10px;
+    display: table;
+}
+.feedback .photo {
+    display: table-cell;
+    width: 100px;
+}
+.feedback .photo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.feedback .name_message {
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.feedback .name {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

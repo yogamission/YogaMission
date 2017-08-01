@@ -8,9 +8,19 @@ menu: home
 <!--==============================Content=================================-->
       <div class="content">
         <div class="container_12">
-          <div class="grid_8">
+          <div class="grid_6">
+            <div id="nanoGallery1Wrapper" style="position: relative;">
             <div id="nanoGallery1"></div>
+            
+            <div id="pauseplay" style="position: absolute;top: 0;right: 0;">
+              <img id="pauseButton" src="images/pause.png" style="width:25px;height:25px;"/>
+              <img id="playButton" src="images/play_button.png" style="width:25px;height:25px;" />
+            </div>
+
+            </div>
             <script charset="utf-8">
+              var myVar;
+
                $(document).ready(function () {
                 $("#nanoGallery1").nanoGallery({
                     kind: 'flickr',
@@ -18,8 +28,10 @@ menu: home
                     photoset: '72157686852841186',
                     photoSorting: 'random',
                     paginationMaxLinesPerPage: 2,
-                    thumbnailWidth: '290 XS135 SM190 LA290 XL290',
-                    thumbnailHeight: '190 XS88 SM125 LA190 XL190',
+                    // thumbnailWidth: '580C XS270C SM380C LA580C XL580C',
+                    // thumbnailHeight: '380C XS176C SM250C LA380C XL380C',
+                    thumbnailWidth: '350 XS300', // XS176C SM250C LA380C XL380C',
+                    thumbnailHeight: '190', // XS88C SM125C LA190C XL190C',
                     colorScheme: 'none',
                   thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
                   //theme: 'light',
@@ -28,15 +40,39 @@ menu: home
                   i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
                   thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
                 });
+              var pause=false;
+              $("#pauseButton").show();
+              $("#playButton").hide();
+
+              $("#pauseButton").click(function(){
+                pause=true;
+                $("#pauseButton").hide();
+                $("#playButton").show();
+              });
+              $("#playButton").click(function(){
+                pause=false;
+                $("#pauseButton").show();
+                $("#playButton").hide();
+              });
+
+
+              var nextPage = function(){
+                if(!pause)
+                  $('#nanoGallery1').nanoGallery('paginationNextPage');
+              };
+              myVar = setInterval(nextPage, 4000);
+              //clearTimeout(myVar);
             });
             </script>
           </div>
 
-          <div class="grid_4">
+          <div class="grid_6">
             <a href="#" class="donate">Our Mission</a>
-            <div class="text1">We can change life</div>
-            <p>Etiam dui eros, laoreet sit amet est vel,modo venenatis eros. Fusce adipiscing quam id riss sagittis, non consequat lacus interdum. Proin  tincidunt nulla, eu sodales arcu.</p>
-            Quisquerra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan justo vitae feugiat placerat. Praesent vel ultrices velit. Suspendisse risus justo, lacinia vitae eleifend
+            <!-- <div class="text1">We can change life</div> -->
+            <p><br/>
+            Yoga Mission, the pioneered Scientific Yoga Research institution located at Chennai, South India since 1999. The Yoga Mission’s daughters are groomed with asharm to academic standard in yogic teachings from Institutional to Clinical level. Our mission to take Hatha Yoga Practices to balance the  body and mind with holistic and professional lifestyle rhythm. <br/><br/>
+
+            Yoga Mission Provides Home, Clinical, Corporate, Community and Online teachings across the globe. Also offers various regular Yoga Eco lifestyle Services through its beautiful Ambience Studio at Chennai, Tamil Nadu, Bangalore, Karnataka and Kuppam, Andra Pradesh.</p>
           </div>
           <div class="clear"></div>
 
@@ -144,8 +180,47 @@ menu: home
               </div>
             </div>
           </div>
- -->      
-          <!-- <div class="grid_12">
+ -->
+<!--           <div class="grid_12">
+            <h2>Our mission daughters</h2>
+            <div class="feedback">
+              <div class="photo"><img src="images/default-user.png"></div>
+              <div class="name_message">
+                <div class="name">Name: Shankar D<br/>
+                Age: 36
+                </div>
+                <div class="message">My humble feedback about Yoga Mission right from the heart; the take away from the institute is huge and it helps nurturing every aspect of my life indeed. I have been saved by Babu sir and Shameem madam and their trainers like Sathya sir, a few times in last 10 years, to get rid of my back pain and neck pain from a patient stage to a normal healthy person, at various stage of my life. I strongly recommend my folks to make use of their ultimate passion towards teaching Yoga and reap the beautiful experience of practicing Yoga.</div>
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="photo"><img src="images/feedback/ravishankar_priya.jpg"></div>
+              <div class="name_message">
+                <div class="name">Name: Ravishankar and Priya                </div>
+                <div class="message">Yoga Mission is doing a extraordinary services to the society. . I had knee pain. I found that yoga mission is  conducting regular classes. The breathing exercises takes us to new heights. The atmosphere of the centre is awesome with trees, bird sound and calm place. There are special classes  available  one to one and that gives us to improve our issues.  Give us motion and motivation to attend classes. Overall the feeling is great and I would recommend all people join yoga mission because they do great job. 👏👏👏👏👏👍👍👍🙏🙏🙏🙏</div>
+              </div>
+            </div>
+          </div>
+ -->
+          <div class="grid_12">
+            <h2>Our customer feedback</h2>
+            <div class="feedback">
+              <div class="photo"><img src="images/default-user.png"></div>
+              <div class="name_message">
+                <div class="name">Name: Shankar D<br/>
+                Age: 36
+                </div>
+                <div class="message">My humble feedback about Yoga Mission right from the heart; the take away from the institute is huge and it helps nurturing every aspect of my life indeed. I have been saved by Babu sir and Shameem madam and their trainers like Sathya sir, a few times in last 10 years, to get rid of my back pain and neck pain from a patient stage to a normal healthy person, at various stage of my life. I strongly recommend my folks to make use of their ultimate passion towards teaching Yoga and reap the beautiful experience of practicing Yoga.</div>
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="photo"><img src="images/feedback/ravishankar_priya.jpg"></div>
+              <div class="name_message">
+                <div class="name">Name: Ravishankar and Priya                </div>
+                <div class="message">Yoga Mission is doing a extraordinary services to the society. . I had knee pain. I found that yoga mission is  conducting regular classes. The breathing exercises takes us to new heights. The atmosphere of the centre is awesome with trees, bird sound and calm place. There are special classes  available  one to one and that gives us to improve our issues.  Give us motion and motivation to attend classes. Overall the feeling is great and I would recommend all people join yoga mission because they do great job. 👏👏👏👏👏👍👍👍🙏🙏🙏🙏</div>
+              </div>
+            </div>
+          </div>
+          <!--           <div class="grid_12">
             <h2>Our customer feedback</h2>
             <div id="owl">
               <div class="item">
