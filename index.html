@@ -9,61 +9,8 @@ menu: home
       <div class="content">
         <div class="container_12">
           <div class="grid_6">
-            <div id="nanoGallery1Wrapper" style="position: relative;">
-            <div id="nanoGallery1"></div>
             
-            <div id="pauseplay" style="position: absolute;top: 0;right: 0;">
-              <img id="pauseButton" src="images/pause.png" style="width:25px;height:25px;"/>
-              <img id="playButton" src="images/play_button.png" style="width:25px;height:25px;" />
-            </div>
-
-            </div>
-            <script charset="utf-8">
-              var myVar;
-
-               $(document).ready(function () {
-                $("#nanoGallery1").nanoGallery({
-                    kind: 'flickr',
-                    userID: '146612014@N06',
-                    photoset: '72157686852841186',
-                    photoSorting: 'random',
-                    paginationMaxLinesPerPage: 2,
-                    // thumbnailWidth: '580C XS270C SM380C LA580C XL580C',
-                    // thumbnailHeight: '380C XS176C SM250C LA380C XL380C',
-                    thumbnailWidth: '350 XS300', // XS176C SM250C LA380C XL380C',
-                    thumbnailHeight: '190', // XS88C SM125C LA190C XL190C',
-                    colorScheme: 'none',
-                  thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
-                  //theme: 'light',
-                  // thumbnailGutterWidth : 0,
-                  // thumbnailGutterHeight : 0,
-                  i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
-                  thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
-                });
-              var pause=false;
-              $("#pauseButton").show();
-              $("#playButton").hide();
-
-              $("#pauseButton").click(function(){
-                pause=true;
-                $("#pauseButton").hide();
-                $("#playButton").show();
-              });
-              $("#playButton").click(function(){
-                pause=false;
-                $("#pauseButton").show();
-                $("#playButton").hide();
-              });
-
-
-              var nextPage = function(){
-                if(!pause)
-                  $('#nanoGallery1').nanoGallery('paginationNextPage');
-              };
-              myVar = setInterval(nextPage, 4000);
-              //clearTimeout(myVar);
-            });
-            </script>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sN2ujELKl90?rel=0" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <div class="grid_6">
@@ -201,6 +148,64 @@ menu: home
             </div>
           </div>
  -->
+          <div class="grid_12">
+            <br><br>
+            <div id="nanoGallery1Wrapper" style="position: relative;">
+            <div id="nanoGallery1" style="max-width: 510px;"></div>
+            
+            <div id="pauseplay" style="position: absolute;top: 0;right: 0;">
+              <img id="pauseButton" src="images/pause.png" style="width:25px;height:25px;"/>
+              <img id="playButton" src="images/play_button.png" style="width:25px;height:25px;" />
+            </div>
+
+            </div>
+            <script charset="utf-8">
+              var myVar;
+
+               $(document).ready(function () {
+                $("#nanoGallery1").nanoGallery({
+                    kind: 'flickr',
+                    userID: '146612014@N06',
+                    photoset: '72157686852841186',
+                    photoSorting: 'random',
+                    paginationMaxLinesPerPage: 2,
+                    // thumbnailWidth: '580C XS270C SM380C LA580C XL580C',
+                    // thumbnailHeight: '380C XS176C SM250C LA380C XL380C',
+                    thumbnailWidth: '475 XS300 SM300', // XS176C SM250C LA380C XL380C',
+                    thumbnailHeight: '272 XS190 SM190', // XS88C SM125C LA190C XL190C',
+                    colorScheme: 'none',
+                  thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+                  //theme: 'light',
+                  // thumbnailGutterWidth : 0,
+                  // thumbnailGutterHeight : 0,
+                  i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+                  thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
+                });
+              var pause=false;
+              $("#pauseButton").show();
+              $("#playButton").hide();
+
+              $("#pauseButton").click(function(){
+                pause=true;
+                $("#pauseButton").hide();
+                $("#playButton").show();
+              });
+              $("#playButton").click(function(){
+                pause=false;
+                $("#pauseButton").show();
+                $("#playButton").hide();
+              });
+
+
+              var nextPage = function(){
+                if(!pause)
+                  $('#nanoGallery1').nanoGallery('paginationNextPage');
+              };
+              myVar = setInterval(nextPage, 4000);
+              //clearTimeout(myVar);
+            });
+            </script>
+          </div>
           <div class="grid_12">
             <h2>Our client feedback</h2>
             <div class="feedback">
